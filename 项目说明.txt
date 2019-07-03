@@ -1,0 +1,5 @@
+源代码位于src文件夹中
+1、src/LR1.java 程序入口和主页面代码
+2、src/LRCore.java 语句分析核心代码
+3、src/LRData.java 分析器相关数据代码
+4、src/LRShow.java 栈相关演示界面代码
