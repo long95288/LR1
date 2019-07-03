@@ -3,7 +3,7 @@ import java.awt.*;
 
 /*
 *
-* 动画显示的核心
+* 动画显示的类
 *
 * */
 public class LRShow {

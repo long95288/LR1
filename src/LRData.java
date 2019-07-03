@@ -20,11 +20,11 @@ public class LRData {
 
     // 初始化数据
     public static void initData(){
-        for(int state=0; state < statenum; state++)
-            for(int i=0;i<endcharz.length;i++)
-            {
-                action[state][i]="^";//默认^为空符号
+        for(int state=0; state < statenum; state++) {
+            for (int i = 0; i < endcharz.length; i++) {
+                action[state][i] = "^";//默认^为空符号
             }
+        }
         //按照实验表构建
         action[0][0]="S5";
         action[0][3]="S4";
@@ -63,11 +63,11 @@ public class LRData {
         action[11][4]="r5";
         action[11][5]="r5";
         //构建GOTO表
-        for(int state = 0; state < statenum; state ++)
-            for(int i = 0;i < noendcharz.length; i++)
-            {
-                Goto[state][i]=-1; //初始化为-1是空的
+        for(int state = 0; state < statenum; state ++) {
+            for (int i = 0; i < noendcharz.length; i++) {
+                Goto[state][i] = -1; //初始化为-1是空的
             }
+        }
         Goto[0][0]=1;
         Goto[0][1]=2;
         Goto[0][2]=3;
@@ -125,8 +125,9 @@ public class LRData {
     {
         for(int i=0;i<noendcharz.length;i++)
         {
-            if(noendcharz[i]==A)
+            if(noendcharz[i]==A) {
                 return i;
+            }
         }
         return -1;
     }
